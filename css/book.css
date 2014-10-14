@@ -1,0 +1,387 @@
+/*
+ * Content
+ */
+ #content {
+  padding-left: 250px;
+  background-color: #ffffff;
+  height: calc(100% - 93px);
+}
+@media (min-width: 768px) {
+  #content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+/*
+ * Sidebar
+ */
+ #sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  height: calc(100% - 121px) !important;
+  background: #ffffff;
+  position: absolute;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+  border: 1px solid #eee;
+}
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-nav > .sidebar-brand {
+  margin-top: 30px;
+  height: 30px;
+  line-height: 60px;
+  font-size: 18px;
+}
+.sidebar-nav > .sidebar-brand h4 {
+  color: #444;
+}
+#price-bar {
+  margin-left: 150px;
+  width: 60px;
+  height: 40px;
+  border: none;
+}
+#price-bar:text {
+  vertical-align: middle;
+}
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+.sidebar-nav li p {
+  margin-bottom: 0;
+  display: block;
+  text-decoration: none;
+}
+.sidebar-nav li > p {
+  color: #694489;
+}
+.sidebar-nav li span p {
+  display: inline-block;
+  font-size: 12px;
+  font-size: ;
+  color: #555;
+}
+.sidebar-nav li span {
+  background-color: inherit;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: block;
+  border: none;
+}
+.slider {
+  margin-left: 21px;
+}
+@media (max-width:768px) {
+  #content {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+    left: 0;
+  }
+  #wrapper.active {
+    position: relative;
+    left: 250px;
+  }
+  #wrapper.active #sidebar-wrapper {
+    left: 250px;
+    width: 250px;
+    transition: all 0.4s ease 0s;
+  }
+  #menu-toggle {
+    display: inline-block;
+  }
+  .inset {
+    padding: 15px;
+  }
+}
+
+
+/*
+ * Content
+ */
+#book-image, #book-title-info {
+  display: inline-block;
+}
+#book-image {
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+#book-image img {
+  width: 130px;
+  height: 182px;
+}
+#book-title-info {
+  width: 180px;
+  height: 182px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+#title {
+  font-size: 20px;
+}
+#edition {
+  font-size: 15px;
+}
+#author {
+  margin-top: 5px;
+  font-size: 15px;
+}
+#price-range {
+  margin-top: 20px;
+  width: 150px;
+  padding: 4px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #694489;
+  border-radius: 10px;
+  background-color: #694489;
+}
+table tr td:nth-child(1) {
+  width: calc(100% / 4.08);
+}
+table tr td:nth-child(2) {
+  width: calc(100% / 3.28);
+}
+table tr td:nth-child(3) {
+  width: calc(100% / 3.49);
+}
+#categories {
+  width: calc(100% - 70px);
+  margin-top: 40px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+#categories tr {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+#categories tr > td {
+  border-top: none;
+}
+#seller-list {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 71px);
+  padding-bottom: 20px;
+  border: none;
+}
+#seller-list table {
+  width: 100%;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+#seller-list table td {
+  font-size: 12px;
+}
+#seller-list table td:nth-child(3) {
+  cursor: pointer;
+}
+#seller-list table tr .amazon {
+  background-color: #c60;
+}
+#seller-list .btn {
+  margin-top: 0;
+  padding: 5px;
+  background-color: #3B5997;
+  color: #ffffff;
+  font-size: 12px;
+}
+@media (min-width: 500px) {
+  #seller-list, #categories {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #seller-list table td, #seller-list .btn { {
+    font-size: 15px;
+  }
+}
+@media (min-width: 922px) {
+  #book-image {
+    margin-left: 80px;
+  }
+  #book-image img {
+    width: 171.2px;
+    height: 240px;
+  }
+  #book-title-info {
+    margin-left: 50px;
+    width: 370px;
+    height: 250px;
+  }
+  #title, #edition {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  #title {
+    font-size: 30px;
+  }
+  #edition {
+    margin-left: 5px;
+  }
+  #author {
+    font-size: 18px;
+  }
+  #categories {
+    width: calc(100% - 159px);
+  }
+  #seller-list {
+    width: calc(100% - 160px);
+    height: calc(100% - 380px);
+    overflow-y: scroll;
+  }
+  #seller-list::-webkit-scrollbar {
+    width: 12px;
+  }
+  #seller-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+  }
+  #seller-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+}
+
+
+/*
+ * Modal login
+ */
+.modal .modal-dialog .modal-content img {
+  padding-right: 3px;
+  width: 30px;
+  height: 30px;
+}
+.modal .modal-body .form-horizontal .form-group {
+  width: 300px;
+}
+.modal .modal-dialog .modal-body label {
+  color: #444;
+}
+
+@media (min-width: 768px) {
+  .modal .modal-body .form-horizontal .form-group {
+    width: 600px;
+  }
+
+
+/* 
+ * Modal messages
+ */
+.modal-header {
+  background-color:#627BAE;
+}
+.modal-body {
+  background-color: #EDEFF4
+}
+#myModalLabel {
+  color: #FFFFFF;
+}
+.bubbleSender {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  padding: 0px;
+  background: #D3E5FE;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: #7F7F7F solid 1px;
+  margin-left: 55%;
+  margin-bottom:5px;
+}
+.bubbleSender:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 1px 15px 15px;
+  border-color: transparent #D3E5FE;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -15px;
+  top: 10px;
+}
+.bubbleSender:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent #7F7F7F;
+  display: block;
+  width: 0;
+  z-index: 0;
+  right: -16px;
+  top: 10px;
+}
+.bubbleReceiver {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  padding: 0px;
+  background: #F4F4F4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: #7F7F7F solid 1px;
+  margin-left:11%;
+  margin-bottom: 5px;
+  
+}
+.bubbleReceiver:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0px;
+  border-color: transparent #F4F4F4;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -15px;
+  top: 10px;
+}
+.bubbleReceiver:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0px;
+  border-color: transparent #7F7F7F;
+  display: block;
+  width: 0;
+  z-index: 0;
+  left: -16px;
+  top: 10px;
+}
+#chatText {
+  margin-left:5px;
+  margin-right:5px;
+}
+#receiver-container{
+    width: 600px;
+}
+#receiver-container >  img, #container > div {
+    display: inline-block;
+}
+#senderPic {
+  width:40px;
+  height:40px;
+  float:left;
+}
+#messagebox {
+  margin-left:5%;
+}
+
