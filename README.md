@@ -1,6 +1,7 @@
 Textbook-Exchange
 =================
 In development
+
 Currently hosted at: http://textbookexchange.net63.net/
 
 Original Developers: William Chou, Jon Rovira, Christina Kim, Divir Gupta
